@@ -6,7 +6,6 @@ BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 THIS=$0
 
-
 cd $BASEDIR
 source ../set-env.sh
 
@@ -16,4 +15,3 @@ terraform init \
   -backend-config="dynamodb_table=${DYNAMODB_TABLE}"
 
 terraform destroy -auto-approve
-
