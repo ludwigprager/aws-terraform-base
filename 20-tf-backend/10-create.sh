@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
-set -x
-
 set -eu
 set -o pipefail
-
-THIS=$0
-
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $BASEDIR
