@@ -5,8 +5,8 @@ This project is a generic solution to use terraform statefiles in a CICD pipelin
    The deletion is not easily possible with a script to prevent accidental use.
 2. The deployment is resilient against multiple simultaneous calls (synchronisation).
 3. Ability to be used in various situations like
-    - several statefiles per team (like for team 'CAOUK' there would be at least POWER + GAS)
-    - AWS accounts per environment (like CAOUK-NonProd, CAOUK-Prod)
+    - several statefiles per team
+    - AWS accounts per environment (like G1-NonProd, G1-Prod)
     - One AWS account for multiple environments. (terraform 'workspaces')
 
 # Possible Alternative Ways of Implementation
