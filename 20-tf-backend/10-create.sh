@@ -7,36 +7,13 @@ set -o pipefail
 
 THIS=$0
 
-#usage() {
-#cat << EOF
-#Usage: ${THIS} "<environment account id>"
-#example:
-#
-#${THIS} 999999999999
-#
-#EOF
-#}
-#
-#if [[ $# -lt 1 ]]; then
-#  usage
-#  exit 1
-#fi
-
-#ENV_ACCOUNT_ID=$1
-
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $BASEDIR
-#source ../functions.sh
-source ./set-env.sh
+
+source ../set-env.sh
 source ./functions.sh
 
-# test
-#echo assuming role 1
-
-#assume-cicd-role ${ENV_ACCOUNT_ID}
-
-#echo assuming role 2
 
 # 1. test if bucket exists and you can decrypt
 # in that case you can assume it's YOUR bucket
